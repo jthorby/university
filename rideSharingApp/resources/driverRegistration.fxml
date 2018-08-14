@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="content" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="870.0" prefWidth="1380.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DriverRegistrationController">
+   <children>
+       <Label fx:id="responseLabel" layoutX="483.0" layoutY="563.0" prefHeight="19.0" prefWidth="228.0" style="-fx-text-fill: red;">
+           <font>
+               <Font size="13.0" />
+           </font>
+       </Label>
+       <Label layoutX="478.0" layoutY="331.0" prefHeight="34.0" prefWidth="420.0" styleClass="general-label" stylesheets="css/generalStyle.css, css/driverStyle.css" text=" License Type">
+           <font>
+               <Font size="15.0" />
+           </font>
+       </Label>
+       <Label layoutX="478.0" layoutY="385.0" prefHeight="33.0" prefWidth="420.0" styleClass="general-label" stylesheets="css/generalStyle.css, css/driverStyle.css" text=" License Number">
+           <font>
+               <Font size="15.0" />
+           </font>
+       </Label>
+       <Label layoutX="478.0" layoutY="444.0" prefHeight="34.0" prefWidth="420.0" styleClass="general-label" stylesheets="css/generalStyle.css, css/driverStyle.css" text=" License Issue Date">
+           <font>
+               <Font size="15.0" />
+           </font>
+       </Label>
+       <Label layoutX="478.0" layoutY="494.0" prefHeight="34.0" prefWidth="420.0" styleClass="general-label" stylesheets="css/generalStyle.css, css/driverStyle.css" text=" License Expiry Date">
+           <font>
+               <Font size="15.0" />
+           </font>
+       </Label>
+      <TextField fx:id="licenseNumber" layoutX="711.0" layoutY="386.0" prefHeight="31.0" prefWidth="186.0" styleClass="general-text-entry" stylesheets="css/generalStyle.css, css/driverStyle.css">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <DatePicker fx:id="issueDate" layoutX="711.0" layoutY="445.0" prefHeight="31.0" prefWidth="186.0" styleClass="general-date-picker" stylesheets="css/generalStyle.css, css/driverStyle.css" />
+      <DatePicker fx:id="expiryDate" layoutX="711.0" layoutY="495.0" prefHeight="31.0" prefWidth="186.0" styleClass="general-date-picker" stylesheets="css/generalStyle.css, css/driverStyle.css" />
+      <SplitMenuButton fx:id="licenseType" layoutX="711.0" layoutY="332.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="186.0" styleClass="general-split-menu" stylesheets="css/generalStyle.css, css/driverStyle.css" text="Full">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#restrictedRadioAction" styleClass="general-button-white" text="Restricted" />
+            <MenuItem mnemonicParsing="false" onAction="#fullRadioAction" styleClass="general-button-white" text="Full" />
+            <MenuItem mnemonicParsing="false" onAction="#full2RadioAction" styleClass="general-button-white" text="Full (Longer than 2 years)" />
+         </items>
+      </SplitMenuButton>
+      <Button layoutX="711.0" layoutY="557.0" mnemonicParsing="false" onAction="#registerAction" prefHeight="29.0" prefWidth="186.0" styleClass="general-button" stylesheets="css/generalStyle.css, css/driverStyle.css" text="Register">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="452.0" layoutY="252.0" text="Register your license to enable driver features">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="870.0" prefWidth="1380.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DriverRouteController">
+    <children>
+        <Label layoutX="127.0" layoutY="249.0" prefHeight="33.0" prefWidth="420.0" styleClass="general-label" stylesheets="css/generalStyle.css, css/driverStyle.css" text=" Route name">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="routeNameEntry" layoutX="360.0" layoutY="250.0" prefHeight="31.0" prefWidth="186.0" styleClass="general-text-entry" stylesheets="css/generalStyle.css, css/driverStyle.css">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </TextField>
+        <Button layoutX="58.0" layoutY="667.0" mnemonicParsing="false" onAction="#createRouteButtonAction" prefHeight="29.0" prefWidth="200.0" styleClass="general-button" stylesheets="css/generalStyle.css, css/driverStyle.css" text="Create route">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <Label layoutX="171.0" layoutY="156.0" text="Create a new Route">
+            <font>
+                <Font name="System Bold" size="30.0" />
+            </font>
+        </Label>
+        <Label fx:id="stopPointResponseLabel" layoutX="846.0" layoutY="369.0" prefHeight="15.0" prefWidth="206.0" text=" " />
+      <ListView fx:id="stopPointListView" layoutX="418.0" layoutY="391.0" prefHeight="307.0" prefWidth="200.0" styleClass="general-list" stylesheets="css/generalStyle.css, css/driverStyle.css" />
+      <Label layoutX="397.0" layoutY="317.0" text="Select stop-points to add to this route">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="317.0" text="Stop-points in this route">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <ListView fx:id="routeStopPointListView" layoutX="58.0" layoutY="360.0" prefHeight="307.0" prefWidth="200.0" styleClass="general-list" stylesheets="css/generalStyle.css, css/driverStyle.css" />
+      <Label layoutX="846.0" layoutY="156.0" text="Create a new Stop-point">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="842.0" layoutY="321.0" prefHeight="33.0" prefWidth="420.0" styleClass="general-label" stylesheets="css/generalStyle.css, css/driverStyle.css" text=" Suburb">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="suburbEntry" layoutX="1075.0" layoutY="322.0" prefHeight="31.0" prefWidth="186.0" styleClass="general-text-entry" stylesheets="css/generalStyle.css, css/driverStyle.css">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="842.0" layoutY="281.0" prefHeight="33.0" prefWidth="420.0" styleClass="general-label" stylesheets="css/generalStyle.css, css/driverStyle.css" text=" Street name">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="streetNameEntry" layoutX="1075.0" layoutY="282.0" prefHeight="31.0" prefWidth="186.0" styleClass="general-text-entry" stylesheets="css/generalStyle.css, css/driverStyle.css">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Button layoutX="1076.0" layoutY="362.0" mnemonicParsing="false" onAction="#addStopPointButtonAction" prefHeight="29.0" prefWidth="186.0" styleClass="general-button" stylesheets="css/generalStyle.css, css/driverStyle.css" text="Create stop-point">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="843.0" layoutY="243.0" prefHeight="33.0" prefWidth="420.0" styleClass="general-label" stylesheets="css/generalStyle.css, css/driverStyle.css" text=" Street number">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="streetNumberEntry" layoutX="1076.0" layoutY="244.0" prefHeight="31.0" prefWidth="186.0" styleClass="general-text-entry" stylesheets="css/generalStyle.css, css/driverStyle.css">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Button layoutX="273.0" layoutY="500.0" mnemonicParsing="false" onAction="#addToRouteButtonAction" prefHeight="31.0" prefWidth="133.0" styleClass="general-button-rounded" stylesheets="css/generalStyle.css, css/driverStyle.css" text="&lt;- Add to route">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <TextField fx:id="stopPointSearchEntry" layoutX="418.0" layoutY="362.0" prefHeight="31.0" prefWidth="200.0" promptText="Search for stop-points..." styleClass="general-text-entry" stylesheets="css/generalStyle.css, css/driverStyle.css">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label fx:id="routeResponseLabel" layoutX="55.0" layoutY="707.0" prefHeight="17.0" prefWidth="287.0" text=" " />
+    </children>
+</Pane>

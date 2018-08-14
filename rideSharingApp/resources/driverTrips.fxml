@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="870.0" prefWidth="1380.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DriverTripsController">
+   <children>
+       <Label layoutX="525.0" layoutY="14.0" text="Create a new Trip">
+           <font>
+               <Font name="System Bold" size="30.0" />
+           </font>
+       </Label>
+       <Label layoutX="942.0" layoutY="64.0" prefHeight="34.0" prefWidth="420.0" styleClass="general-label" stylesheets="css/generalStyle.css, css/driverStyle.css" text=" Direction">
+           <font>
+               <Font size="15.0" />
+           </font>
+       </Label>
+       <ComboBox fx:id="directionBox" layoutX="1175.0" layoutY="65.0" prefHeight="31.0" prefWidth="186.0" styleClass="general-split-menu" stylesheets="css/generalStyle.css, css/driverStyle.css">
+    </ComboBox>
+       <Label layoutX="14.0" layoutY="64.0" prefHeight="34.0" prefWidth="420.0" styleClass="general-label" stylesheets="css/generalStyle.css, css/driverStyle.css" text=" Route">
+           <font>
+               <Font size="15.0" />
+           </font>
+       </Label>
+       <ComboBox fx:id="routeBox" layoutX="247.0" layoutY="65.0" onAction="#routeBoxAction" prefHeight="31.0" prefWidth="186.0" promptText="Select a route" styleClass="general-split-menu" stylesheets="css/generalStyle.css, css/driverStyle.css">
+    </ComboBox>
+      <HBox fx:id="daysOfWeekBox" alignment="CENTER" layoutX="14.0" layoutY="115.0" prefHeight="30.0" prefWidth="1352.0" style="-fx-background-color: #777777;">
+         <children>
+            <CheckBox fx:id="recurringBox" contentDisplay="CENTER" mnemonicParsing="false" onAction="#toggleDaysOfWeek" styleClass="check-box" stylesheets="css/generalStyle.css, css/driverStyle.css" text="Recurring">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="mondayBox" contentDisplay="CENTER" disable="true" mnemonicParsing="false" styleClass="check-box" stylesheets="css/generalStyle.css, css/driverStyle.css" text=" Monday">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="tuesdayBox" contentDisplay="CENTER" disable="true" mnemonicParsing="false" styleClass="check-box" stylesheets="css/generalStyle.css, css/driverStyle.css" text=" Tuesday">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="wednesdayBox" contentDisplay="CENTER" disable="true" mnemonicParsing="false" styleClass="check-box" stylesheets="css/generalStyle.css, css/driverStyle.css" text=" Wednesday">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="thursdayBox" contentDisplay="CENTER" disable="true" mnemonicParsing="false" styleClass="check-box" stylesheets="css/generalStyle.css, css/driverStyle.css" text=" Thursday">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="fridayBox" contentDisplay="CENTER" disable="true" mnemonicParsing="false" styleClass="check-box" stylesheets="css/generalStyle.css, css/driverStyle.css" text=" Friday">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="saturdayBox" contentDisplay="CENTER" disable="true" mnemonicParsing="false" styleClass="check-box" stylesheets="css/generalStyle.css, css/driverStyle.css" text=" Saturday">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="sundayBox" contentDisplay="CENTER" disable="true" mnemonicParsing="false" styleClass="check-box" stylesheets="css/generalStyle.css, css/driverStyle.css" text=" Sunday">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </CheckBox>
+            <HBox alignment="CENTER" prefHeight="30.0" prefWidth="265.0">
+               <children>
+                  <DatePicker fx:id="expiryDatePicker" disable="true" prefHeight="25.0" prefWidth="189.0" styleClass="general-split-menu" stylesheets="css/generalStyle.css, css/driverStyle.css" />
+                  <Label fx:id="expiryDateLabel" disable="true" prefHeight="34.0" prefWidth="181.0" styleClass="general-label" stylesheets="css/generalStyle.css, css/driverStyle.css" text=" Expiry Date">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <TableView fx:id="stopPointTable" layoutX="14.0" layoutY="224.0" prefHeight="586.0" prefWidth="513.0" styleClass="table-view" stylesheets="css/generalStyle.css, css/driverStyle.css">
+         <columns>
+            <TableColumn fx:id="stopPointColumn" prefWidth="339.0" text="Stop-point" />
+            <TableColumn fx:id="stopTimeColumn" prefWidth="173.0" text="Stop Time" />
+         </columns>
+      </TableView>
+      <Button layoutX="14.0" layoutY="822.0" mnemonicParsing="false" onAction="#createTripAction" prefHeight="25.0" prefWidth="513.0" styleClass="general-button" stylesheets="css/generalStyle.css, css/driverStyle.css" text="Create Trip" />
+      <Label layoutX="965.0" layoutY="162.0" text="My Trips">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <TableView fx:id="myTripsTable" layoutX="718.0" layoutY="226.0" prefHeight="498.0" prefWidth="648.0" styleClass="table-view" stylesheets="css/generalStyle.css, css/driverStyle.css">
+         <columns>
+            <TableColumn fx:id="routeColumn" prefWidth="233.0" text="Route" />
+            <TableColumn fx:id="directionColumn" prefWidth="167.0" text="Direction" />
+            <TableColumn fx:id="dateColumn" prefWidth="100.0" text="Date" />
+            <TableColumn fx:id="sharedColumn" minWidth="0.0" prefWidth="75.0" text="Shared" />
+            <TableColumn fx:id="bookingsColumn" prefWidth="75.0" text="Bookings" />
+         </columns>
+      </TableView>
+      <Label layoutX="942.0" layoutY="724.0" text="Share a Trip">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="718.0" layoutY="779.0" prefHeight="34.0" prefWidth="648.0" styleClass="general-label" stylesheets="css/generalStyle.css, css/driverStyle.css" text=" Number of seats available">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="seatsAvailableEntry" layoutX="1179.0" layoutY="780.0" prefHeight="31.0" prefWidth="186.0" styleClass="general-split-menu" stylesheets="css/generalStyle.css, css/driverStyle.css" />
+      <Button layoutX="718.0" layoutY="822.0" mnemonicParsing="false" onAction="#shareTrip" prefHeight="25.0" prefWidth="648.0" styleClass="general-button" stylesheets="css/generalStyle.css, css/driverStyle.css" text="Share selected Trip" />
+      <Text layoutX="75.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter a time for each stop-point, then press enter">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>

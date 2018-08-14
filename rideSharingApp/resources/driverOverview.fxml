@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="870.0" prefWidth="1380.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.driverOverviewController">
+   <children>
+      <Button layoutX="1159.0" layoutY="14.0" mnemonicParsing="false" onAction="#createStopPointButtonAction" prefHeight="29.0" prefWidth="207.0" styleClass="general-button" stylesheets="css/generalStyle.css, css/driverStyle.css" text="Create a new Stop-point">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="870.0" prefWidth="1380.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DriverVehiclesController">
+   <children>
+       <Label layoutX="635.0" layoutY="284.0" prefHeight="33.0" prefWidth="420.0" styleClass="general-label" stylesheets="css/generalStyle.css" text=" Type">
+           <font>
+               <Font size="15.0" />
+           </font>
+       </Label>
+       <TextField fx:id="type" layoutX="868.0" layoutY="285.0" prefHeight="31.0" prefWidth="186.0" styleClass="general-text-entry" stylesheets="css/generalStyle.css">
+           <font>
+               <Font size="15.0" />
+           </font>
+       </TextField>
+       <Label layoutX="635.0" layoutY="334.0" prefHeight="33.0" prefWidth="420.0" styleClass="general-label" stylesheets="css/generalStyle.css" text=" Model">
+           <font>
+               <Font size="15.0" />
+           </font>
+       </Label>
+       <TextField fx:id="model" layoutX="868.0" layoutY="335.0" prefHeight="31.0" prefWidth="186.0" styleClass="general-text-entry" stylesheets="css/generalStyle.css">
+           <font>
+               <Font size="15.0" />
+           </font>
+       </TextField>
+       <Label layoutX="635.0" layoutY="384.0" prefHeight="33.0" prefWidth="420.0" styleClass="general-label" stylesheets="css/generalStyle.css" text=" Colour">
+           <font>
+               <Font size="15.0" />
+           </font>
+       </Label>
+       <TextField fx:id="colour" layoutX="868.0" layoutY="385.0" prefHeight="31.0" prefWidth="186.0" styleClass="general-text-entry" stylesheets="css/generalStyle.css">
+           <font>
+               <Font size="15.0" />
+           </font>
+       </TextField>
+       <Label layoutX="635.0" layoutY="434.0" prefHeight="33.0" prefWidth="420.0" styleClass="general-label" stylesheets="css/generalStyle.css" text=" License Plate">
+           <font>
+               <Font size="15.0" />
+           </font>
+       </Label>
+       <TextField fx:id="plate" layoutX="868.0" layoutY="435.0" prefHeight="31.0" prefWidth="186.0" styleClass="general-text-entry" stylesheets="css/generalStyle.css">
+           <font>
+               <Font size="15.0" />
+           </font>
+       </TextField>
+       <Label layoutX="635.0" layoutY="484.0" prefHeight="33.0" prefWidth="420.0" styleClass="general-label" stylesheets="css/generalStyle.css" text=" Year">
+           <font>
+               <Font size="15.0" />
+           </font>
+       </Label>
+       <TextField fx:id="year" layoutX="868.0" layoutY="485.0" prefHeight="31.0" prefWidth="186.0" styleClass="general-text-entry" stylesheets="css/generalStyle.css">
+           <font>
+               <Font size="15.0" />
+           </font>
+       </TextField>
+       <Label layoutX="635.0" layoutY="534.0" prefHeight="33.0" prefWidth="420.0" styleClass="general-label" stylesheets="css/generalStyle.css" text=" Number of Seats">
+           <font>
+               <Font size="15.0" />
+           </font>
+       </Label>
+       <TextField fx:id="seatsNum" layoutX="868.0" layoutY="535.0" prefHeight="31.0" prefWidth="186.0" styleClass="general-text-entry" stylesheets="css/generalStyle.css">
+           <font>
+               <Font size="15.0" />
+           </font>
+       </TextField>
+       <Button layoutX="868.0" layoutY="707.0" mnemonicParsing="false" onAction="#addVehicleAction" prefHeight="31.0" prefWidth="186.0" styleClass="general-button" stylesheets="css/generalStyle.css, css/driverStyle.css" text="Add vehicle to profile">
+           <font>
+               <Font size="15.0" />
+           </font>
+       </Button>
+      <Label fx:id="responseLabel" layoutX="635.0" layoutY="593.0" prefHeight="15.0" prefWidth="216.0" text=" " textFill="#e40303" />
+       <Label alignment="CENTER" layoutX="337.0" layoutY="234.0" prefHeight="30.0" prefWidth="208.0" stylesheets="css/generalStyle.css" text="Your vehicles">
+           <font>
+               <Font name="System Bold" size="18.0" />
+           </font>
+       </Label>
+       <ListView fx:id="vehiclesList" layoutX="337.0" layoutY="284.0" prefHeight="422.0" prefWidth="208.0" styleClass="general-list" stylesheets="css/generalStyle.css, css/driverStyle.css" />
+       <Button layoutX="337.0" layoutY="707.0" mnemonicParsing="false" onAction="#currentVehicleButtonAction" prefHeight="31.0" prefWidth="208.0" styleClass="general-button" stylesheets="css/generalStyle.css, css/driverStyle.css" text="Select current vehicle">
+           <font>
+               <Font size="15.0" />
+           </font>
+       </Button>
+      <Label alignment="CENTER" layoutX="635.0" layoutY="234.0" prefHeight="30.0" prefWidth="420.0" stylesheets="css/generalStyle.css" text="Add a new vehicle">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="634.0" layoutY="585.0" prefHeight="33.0" prefWidth="420.0" styleClass="general-label" stylesheets="css/generalStyle.css" text=" WOF Expiry Date">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="wofExpiryDatePicker" layoutX="867.0" layoutY="586.0" prefHeight="31.0" prefWidth="186.0" styleClass="general-text-entry" stylesheets="css/generalStyle.css"/>
+      <Label layoutX="634.0" layoutY="632.0" prefHeight="33.0" prefWidth="420.0" styleClass="general-label" stylesheets="css/generalStyle.css" text=" Registration Expiry Date">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="regoExpiryDatePicker" layoutX="867.0" layoutY="633.0" prefHeight="31.0" prefWidth="186.0" styleClass="general-text-entry" stylesheets="css/generalStyle.css"/>
+   </children>
+</Pane>

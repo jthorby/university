@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="870.0" prefWidth="1380.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RideRidesController">
+    <children>
+        <Button layoutX="21.0" layoutY="622.0" mnemonicParsing="false" onAction="#showDetailsAction" prefHeight="31.0" prefWidth="648.0" styleClass="general-button" stylesheets="css/generalStyle.css, css/rideStyle.css" text="Show details of selected ride">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <TableView fx:id="ridesTable" layoutX="21.0" layoutY="130.0" prefHeight="441.0" prefWidth="648.0" styleClass="table-view" stylesheets="css/generalStyle.css, css/rideStyle.css">
+            <columns>
+                <TableColumn fx:id="routeColumn" prefWidth="244.0" text="Route" />
+                <TableColumn fx:id="directionColumn" prefWidth="134.0" text="Direction" />
+                <TableColumn fx:id="dateColumn" prefWidth="133.0" text="Date" />
+                <TableColumn fx:id="seatsColumn" prefWidth="136.0" text="Seats Available" />
+            </columns>
+        </TableView>
+      <Text layoutX="183.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Find and book Rides">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <TextField fx:id="searchField" layoutX="21.0" layoutY="105.0" prefHeight="25.0" prefWidth="648.0" promptText="Search for rides by address or suburb..." styleClass="general-text-entry" stylesheets="css/generalStyle.css, css/rideStyle.css" />
+      <TableView fx:id="detailsTable" layoutX="21.0" layoutY="667.0" prefHeight="68.0" prefWidth="648.0">
+        <columns>
+          <TableColumn fx:id="driverColumn" prefWidth="150.0" text="Driver " />
+          <TableColumn fx:id="yearColumn" prefWidth="194.0" text="Year" />
+            <TableColumn fx:id="modelColumn" prefWidth="197.0" text="Model" />
+            <TableColumn fx:id="ratingColumn" prefWidth="106.0" text="Driver Rating" />
+        </columns>
+      </TableView>
+      <Button layoutX="21.0" layoutY="581.0" mnemonicParsing="false" onAction="#bookSeatAction" prefHeight="31.0" prefWidth="648.0" styleClass="general-button" stylesheets="css/generalStyle.css, css/rideStyle.css" text="Book seat on selected ride">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Text layoutX="947.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My Rides">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <TableView fx:id="myRidesTable" layoutX="696.0" layoutY="130.0" prefHeight="441.0" prefWidth="648.0" styleClass="table-view" stylesheets="css/generalStyle.css, css/rideStyle.css">
+         <columns>
+            <TableColumn fx:id="myRouteColumn" prefWidth="265.0" text="Route" />
+            <TableColumn fx:id="myDirectionColumn" prefWidth="143.0" text="Direction" />
+            <TableColumn fx:id="myDateColumn" prefWidth="103.0" text="Date" />
+            <TableColumn fx:id="myStatusColumn" prefWidth="136.0" text="Status" />
+         </columns>
+      </TableView>
+    </children>
+</Pane>

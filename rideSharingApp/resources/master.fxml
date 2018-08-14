@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MasterController">
+   <children>
+      <MenuBar prefHeight="30.0" prefWidth="1600.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Account">
+              <items>
+                  <MenuItem mnemonicParsing="false" onAction="#logoutMenuAction" text="Logout" />
+              </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Pane fx:id="content" layoutX="120.0" layoutY="30.0" prefHeight="870.0" prefWidth="1480.0" />
+      <Pane layoutY="30.0" prefHeight="870.0" prefWidth="120.0" style="-fx-background-color: #4f4f4f">
+         <children>
+            <Label fx:id="currentVehicleLabel" alignment="CENTER" layoutY="840.0" prefHeight="30.0" prefWidth="120.0" text="No current Vehicle" textFill="#f5f4f4">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <VBox prefHeight="150.0" prefWidth="120.0" style="-fx-background-color: #4f4f4f" stylesheets="css/masterStyle.css">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#profileButtonAction" prefHeight="50.0" prefWidth="120.0" styleClass="main-control-button" stylesheets="css/masterStyle.css, css/generalStyle.css" text="My Profile">
+                     <font>
+                        <Font name="Bitstream Vera Sans Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#driveButtonAction" prefHeight="50.0" prefWidth="120.0" styleClass="main-control-button" stylesheets="css/masterStyle.css, css/generalStyle.css" text="Drive">
+                     <font>
+                        <Font name="Bitstream Vera Sans Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#rideButtonAction" prefHeight="50.0" prefWidth="120.0" styleClass="main-control-button" stylesheets="css/masterStyle.css, css/generalStyle.css" text="Ride">
+                     <font>
+                        <Font name="Bitstream Vera Sans Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <Label fx:id="nameLabel" alignment="CENTER" layoutY="810.0" prefHeight="30.0" prefWidth="120.0" text="Username" textFill="#f5f4f4">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</Pane>

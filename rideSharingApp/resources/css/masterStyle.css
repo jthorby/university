@@ -1,0 +1,9 @@
+.main-control-button {
+    -fx-background-color: #4f4f4f;
+    -fx-text-fill: white;
+    -fx-background-radius: 0px;
+}
+
+.main-control-button:hover {
+    -fx-background-color: #3b6bb7;
+}

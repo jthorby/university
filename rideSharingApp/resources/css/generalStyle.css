@@ -1,0 +1,86 @@
+.general-button {
+    -fx-background-color: #777777;
+    -fx-text-fill: white;
+    -fx-border: none;
+    -fx-background-radius: 0px;
+}
+
+.general-button-rounded {
+    -fx-background-color: #777777;
+    -fx-text-fill: white;
+    -fx-border: none;
+    -fx-background-radius: 15px;
+}
+
+.general-button-white {
+    -fx-background-color: white;
+    -fx-border: black;
+    -fx-background-radius: 0px;
+}
+
+.general-label {
+    -fx-background-color: #777777;
+    -fx-text-fill: white;
+    -fx-background-radius: 0px;
+}
+
+.general-text-entry {
+    -fx-background-radius: 0px;
+    -fx-border-radius: 0px;
+}
+
+.general-date-picker {
+    -fx-background-radius: 0px;
+    -fx-border-radius: 0px;
+    -fx-background-insets: 0;
+}
+
+.general-split-menu {
+    -fx-background-radius: 0px;
+    -fx-border-radius: 0px;
+    -fx-background-insets: 0;
+}
+
+.general-split-menu-content {
+    -fx-font-size: 20;
+}
+
+.general-list {
+    -fx-control-inner-background: #cccccc;
+    -fx-background-insets: 0;
+    -fx-font-size: 15;
+}
+
+.check-box {
+    -fx-text-fill: WHITE;
+}
+
+.check-box .box {
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-background-insets: 0;
+}
+
+.table-view {
+
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-weight: normal;
+
+}
+
+.table-view .column-header{
+    -fx-background-color: #777777;
+}
+
+.popup {
+    -fx-background-color: #4f4f4f;
+    -fx-text-fill: WHITE;
+    -fx-padding: 10;
+    -fx-border-color: RED;
+    -fx-border-width: 3;
+    -fx-font-size: 16;
+}

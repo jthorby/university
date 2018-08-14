@@ -1,0 +1,263 @@
+{
+  "usersMap": {
+    "1": {
+      "id": "1",
+      "name": "admin",
+      "email": "admin@uclive.ac.nz",
+      "mobileNumber": "0271234567",
+      "address": "10 Test Rd",
+      "password": "1",
+      "isRegisteredDriver": true,
+      "currentVehicle": {
+        "type": "Sedan",
+        "model": "Model S",
+        "colour": "Red",
+        "plate": "TESLA",
+        "year": 2017,
+        "seatsNum": 5,
+        "wofExpiry": {
+          "year": 2017,
+          "month": 6,
+          "day": 30
+        },
+        "regoExpiry": {
+          "year": 2017,
+          "month": 6,
+          "day": 18
+        }
+      },
+      "rating": 0,
+      "wofNotification": 1,
+      "licenseNotification": 1,
+      "regoNotification": 1
+    },
+    "2": {
+      "id": "2",
+      "name": "Bouy",
+      "email": "2@uclive.ac.nz",
+      "mobileNumber": "2",
+      "address": "2",
+      "password": "2",
+      "isRegisteredDriver": true,
+      "currentVehicle": null,
+      "rating": 0,
+      "wofNotification": 0,
+      "licenseNotification": 0,
+      "regoNotification": 0
+    }
+  },
+  "licenseMap": {
+    "1": {
+      "type": "Full (Longer than 2 years)",
+      "licenseNumber": "SNDH345",
+      "issueDate": {
+        "year": 2017,
+        "month": 3,
+        "day": 5
+      },
+      "expiryDate": {
+        "year": 2017,
+        "month": 6,
+        "day": 23
+      }
+    }
+  },
+  "vehicleMap": {
+    "1": {
+      "TESLA": {
+        "type": "Sedan",
+        "model": "Model S",
+        "colour": "Red",
+        "plate": "TESLA",
+        "year": 2017,
+        "seatsNum": 5,
+        "wofExpiry": {
+          "year": 2017,
+          "month": 6,
+          "day": 30
+        },
+        "regoExpiry": {
+          "year": 2017,
+          "month": 7,
+          "day": 1
+        }
+      }
+    }
+  },
+  "routeMap": {
+    "1": [
+      {
+        "name": "Morning Pickup",
+        "stopPoints": [
+          {
+            "streetNumber": "10",
+            "streetName": "Woodford Tce",
+            "suburb": "Ilam"
+          },
+          {
+            "streetNumber": "32",
+            "streetName": "Memorial Ave",
+            "suburb": "Burnside"
+          }
+        ]
+      }
+    ]
+  },
+  "tripMap": {
+    "1": [
+      {
+        "stopPoints": [
+          {
+            "stopPoint": {
+              "streetNumber": "10",
+              "streetName": "Woodford Tce",
+              "suburb": "Ilam"
+            },
+            "stopTime": "00:00"
+          },
+          {
+            "stopPoint": {
+              "streetNumber": "32",
+              "streetName": "Memorial Ave",
+              "suburb": "Burnside"
+            },
+            "stopTime": "00:00"
+          }
+        ],
+        "direction": "To University",
+        "date": "2017-06-02",
+        "vehicle": {
+          "type": "Sedan",
+          "model": "Model S",
+          "colour": "Red",
+          "plate": "TESLA",
+          "year": 2017,
+          "seatsNum": 5,
+          "wofExpiry": {
+            "year": 2017,
+            "month": 6,
+            "day": 30
+          },
+          "regoExpiry": {
+            "year": 2017,
+            "month": 6,
+            "day": 18
+          }
+        },
+        "shared": true,
+        "routeName": "Morning Pickup",
+        "availableSeats": 0,
+        "stopPointProperty": "10 Woodford Tce,  Ilam: 00:00\n32 Memorial Ave,  Burnside: 00:00\n",
+        "driverID": "1",
+        "bookings": [],
+        "numBooked": 0
+      },
+      {
+        "stopPoints": [
+          {
+            "stopPoint": {
+              "streetNumber": "10",
+              "streetName": "Woodford Tce",
+              "suburb": "Ilam"
+            },
+            "stopTime": "00:00"
+          },
+          {
+            "stopPoint": {
+              "streetNumber": "32",
+              "streetName": "Memorial Ave",
+              "suburb": "Burnside"
+            },
+            "stopTime": "00:00"
+          }
+        ],
+        "direction": "To University",
+        "date": "2017-06-06",
+        "vehicle": {
+          "type": "Sedan",
+          "model": "Model S",
+          "colour": "Red",
+          "plate": "TESLA",
+          "year": 2017,
+          "seatsNum": 5,
+          "wofExpiry": {
+            "year": 2017,
+            "month": 6,
+            "day": 30
+          },
+          "regoExpiry": {
+            "year": 2017,
+            "month": 6,
+            "day": 18
+          }
+        },
+        "shared": false,
+        "routeName": "Morning Pickup",
+        "availableSeats": 0,
+        "stopPointProperty": "10 Woodford Tce,  Ilam: 00:00\n32 Memorial Ave,  Burnside: 00:00\n",
+        "driverID": "1",
+        "bookings": [],
+        "numBooked": 0
+      },
+      {
+        "stopPoints": [
+          {
+            "stopPoint": {
+              "streetNumber": "10",
+              "streetName": "Woodford Tce",
+              "suburb": "Ilam"
+            },
+            "stopTime": "00:00"
+          },
+          {
+            "stopPoint": {
+              "streetNumber": "32",
+              "streetName": "Memorial Ave",
+              "suburb": "Burnside"
+            },
+            "stopTime": "00:00"
+          }
+        ],
+        "direction": "To University",
+        "date": "2017-06-09",
+        "vehicle": {
+          "type": "Sedan",
+          "model": "Model S",
+          "colour": "Red",
+          "plate": "TESLA",
+          "year": 2017,
+          "seatsNum": 5,
+          "wofExpiry": {
+            "year": 2017,
+            "month": 6,
+            "day": 30
+          },
+          "regoExpiry": {
+            "year": 2017,
+            "month": 6,
+            "day": 18
+          }
+        },
+        "shared": false,
+        "routeName": "Morning Pickup",
+        "availableSeats": 0,
+        "stopPointProperty": "10 Woodford Tce,  Ilam: 00:00\n32 Memorial Ave,  Burnside: 00:00\n",
+        "driverID": "1",
+        "bookings": [],
+        "numBooked": 0
+      }
+    ]
+  },
+  "stopPointSet": [
+    {
+      "streetNumber": "10",
+      "streetName": "Woodford Tce",
+      "suburb": "Ilam"
+    },
+    {
+      "streetNumber": "32",
+      "streetName": "Memorial Ave",
+      "suburb": "Burnside"
+    }
+  ]
+}

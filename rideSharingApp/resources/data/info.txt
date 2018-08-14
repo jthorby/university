@@ -1,0 +1,23 @@
+Styling stuff:
+
+Label + TestField:
+    Label:
+        Dimensions:
+            Height: 33.0
+            Width: 420.0
+            LayoutY = 0.0
+            LayoutX = 0.0
+        CSS:
+            -fx-background-color: #777777; Dark grey
+            -fx-text-fill: white;
+            -fx-background-radius: 3px;
+    TextField:
+        Dimensions:
+            Height: 31.0
+            Width: 186.0
+            LayoutY: 1.0
+            LayoutX: 233.0
+
+    Font:
+        Size: 15.0
+

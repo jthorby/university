@@ -1,0 +1,24 @@
+.general-button:hover {
+    -fx-background-color: #187c12;
+}
+
+.general-button-white:hover {
+    -fx-background-color: #187c12;
+}
+
+.general-button-rounded:hover {
+    -fx-background-color: #187c12;
+}
+
+.general-list:focused .list-cell:filled:focused:selected {
+    -fx-font-size: 17;
+    -fx-background-color: #187c12;
+}
+
+.check-box:selected .box {
+    -fx-background-color: #187c12;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: #187c12;
+}

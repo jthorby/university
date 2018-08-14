@@ -1,0 +1,6 @@
+.background {
+    -fx-background-color: white;
+    -fx-background-image:url("/images/carImage.jpg");
+    -fx-background-repeat: no-repeat no-repeat;
+    -fx-background-position: 55 20, center;
+}

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="loginPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="596.0" prefWidth="650.0" styleClass="background" stylesheets="css/loginStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginController">
+   <children>
+       <!--EXISTING USER-->
+       <Label layoutX="237.0" layoutY="262.0" prefHeight="30.0" text="Password">
+           <font>
+               <Font name="System Bold" size="16.0" />
+           </font>
+       </Label>
+       <Label layoutX="53.0" layoutY="262.0" prefHeight="30.0" text="UC ID">
+           <font>
+               <Font name="System Bold" size="16.0" />
+           </font>
+       </Label>
+       <!--NEW USER-->
+       <Label layoutX="32.0" layoutY="414.0" prefHeight="28.0" prefWidth="262.0" styleClass="general-label" stylesheets="css/generalStyle.css" text=" UC Email">
+           <font>
+               <Font size="15.0" />
+           </font>
+       </Label>
+       <Label layoutX="32.0" layoutY="384.0" prefHeight="28.0" prefWidth="262.0" styleClass="general-label" stylesheets="css/generalStyle.css" text=" UC ID">
+           <font>
+               <Font size="15.0" />
+           </font>
+       </Label>
+       <Label layoutX="32.0" layoutY="445.0" prefHeight="28.0" prefWidth="262.0" styleClass="general-label" stylesheets="css/generalStyle.css" text=" Mobile Number">
+           <font>
+               <Font size="15.0" />
+           </font>
+       </Label>
+       <Label layoutX="32.0" layoutY="495.0" prefHeight="28.0" prefWidth="262.0" styleClass="general-label" stylesheets="css/generalStyle.css" text=" Password">
+           <font>
+               <Font size="15.0" />
+           </font>
+       </Label>
+       <Label layoutX="346.0" layoutY="384.0" prefHeight="28.0" prefWidth="262.0" styleClass="general-label" stylesheets="css/generalStyle.css" text=" Name">
+           <font>
+               <Font size="15.0" />
+           </font>
+       </Label>
+       <Label layoutX="346.0" layoutY="414.0" prefHeight="28.0" prefWidth="262.0" styleClass="general-label" stylesheets="css/generalStyle.css" text=" Address">
+           <font>
+               <Font size="15.0" />
+           </font>
+       </Label>
+       <Label layoutX="346.0" layoutY="494.0" prefHeight="28.0" prefWidth="262.0" styleClass="general-label" stylesheets="css/generalStyle.css" text=" Password">
+           <font>
+               <Font size="15.0" />
+           </font>
+       </Label>
+      <Label layoutX="176.0" prefHeight="57.0" prefWidth="298.0" text="UC Ride Sharing" textAlignment="RIGHT" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Droid Serif Bold" size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="464.0" layoutY="262.0" maxHeight="29.0" maxWidth="100.0" minHeight="29.0" minWidth="100.0" mnemonicParsing="false" onAction="#loginButtonAction" prefHeight="29.0" prefWidth="100.0" text="Login" >
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="198.0" layoutY="333.0" text="New? Create an account below.">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+
+       <!--EXISTING USER-->
+       <TextField fx:id="existingID" layoutX="113.0" layoutY="262.0" prefHeight="29.0" prefWidth="100.0" styleClass="general-text-entry" stylesheets="css/generalStyle.css"/>
+       <PasswordField fx:id="existingPassword" layoutX="337.0" layoutY="262.0" prefHeight="29.0" prefWidth="100.0" styleClass="general-text-entry" stylesheets="css/generalStyle.css"/>
+       <!--NEW USER-->
+      <TextField fx:id="id" layoutX="163.0" layoutY="385.0" prefHeight="25.0" prefWidth="130.0" styleClass="general-text-entry" stylesheets="css/generalStyle.css"/>
+      <TextField fx:id="email" layoutX="163.0" layoutY="415.0" prefHeight="25.0" prefWidth="130.0" styleClass="general-text-entry" stylesheets="css/generalStyle.css"/>
+      <TextField fx:id="mobileNumber" layoutX="163.0" layoutY="446.0" prefHeight="25.0" prefWidth="130.0" styleClass="general-text-entry" stylesheets="css/generalStyle.css"/>
+      <TextField fx:id="name" layoutX="477.0" layoutY="385.0" prefHeight="25.0" prefWidth="130.0" styleClass="general-text-entry" stylesheets="css/generalStyle.css"/>
+      <TextField fx:id="address" layoutX="477.0" layoutY="415.0" prefHeight="25.0" prefWidth="130.0" styleClass="general-text-entry" stylesheets="css/generalStyle.css"/>
+       <PasswordField fx:id="password" layoutX="163.0" layoutY="496.0" prefWidth="130.0" styleClass="general-text-entry" stylesheets="css/generalStyle.css"/>
+       <PasswordField fx:id="rePassword" layoutX="477.0" layoutY="495.0" prefWidth="130.0" styleClass="general-text-entry" stylesheets="css/generalStyle.css"/>
+      <Button layoutX="162.0" layoutY="545.0" mnemonicParsing="false" onAction="#createAccountButtonAction" prefHeight="29.0" prefWidth="130.0" text="Create" styleClass="general-button" stylesheets="css/generalStyle.css">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="loginResponse" layoutX="53.0" layoutY="298.0" prefHeight="25.0" prefWidth="275.0" style="-fx-text-fill: red;" />
+      <Label fx:id="createResponse" layoutX="335.0" layoutY="547.0" prefHeight="25.0" prefWidth="275.0" style="-fx-text-fill: red;" />
+   </children>
+</Pane>
